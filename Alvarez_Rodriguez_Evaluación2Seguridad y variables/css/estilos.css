@@ -1,0 +1,668 @@
+/* =======================================
+   ESTILOS GENERALES
+======================================= */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8c8dc, #f8f4f6);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* =======================================
+   NAVBAR (NO TOCAR)
+======================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e75480;
+    padding: 20px 40px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    color: #ffd1dc;
+}
+
+/* =======================================
+   CONTENEDOR
+======================================= */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* =======================================
+   🔥 FORMULARIO MUCHO MÁS GRANDE
+======================================= */
+.login-box {
+    background: #ffffff;
+    padding: 80px;
+    border-radius: 25px;
+    width: 650px; /* 🔥 MÁS ANCHO */
+    max-width: 95%;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.25);
+}
+
+/* quitar logo */
+.logo-login {
+    display: none;
+}
+
+/* =======================================
+   TEXTOS
+======================================= */
+h2 {
+    color: #e75480;
+    font-size: 28px; /* 🔥 más grande */
+}
+
+/* =======================================
+   INPUTS GRANDES
+======================================= */
+.login-box input {
+    width: 100%;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+/* =======================================
+   BOTÓN GRANDE
+======================================= */
+.login-box button {
+    width: 100%;
+    padding: 20px;
+    background: #e75480;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #d63b6c;
+    transform: scale(1.05);
+}
+
+/* =======================================
+   MENSAJES
+======================================= */
+.error {
+    color: rgb(240, 101, 159);
+    font-size: 15px;
+}
+
+/* =======================================
+   LINK
+======================================= */
+.registro-link {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.registro-link a {
+    color: #e75480;
+    font-weight: bold;
+}
+/* =======================================
+   INICIO CSS DE PAGINA DE BIENVENIDA
+======================================= */
+
+/* =======================================
+   ESTILOS GENERALES
+======================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fdf0f5;
+    color: #333;
+}
+
+h1 { color: #1d2b4f; }
+h2 { color: #ff4d88; }
+h3 { color: #1d2b4f; }
+
+/* =======================================
+   LOGIN
+======================================= */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe0ec, #fdf0f5);
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.logo-login { width: 120px; margin-bottom: 10px; }
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #e75480;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-box button:hover { background: #d63b6c; }
+
+.error {
+    color: rgb(240, 101, 159);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* =======================================
+   NAVBAR
+======================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #c2185b, #ff4d88, #ff85a1);
+    padding: 10px 36px;
+    box-shadow: 0 4px 16px rgba(255,77,136,0.35);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo img {
+    width: 65px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-size: 0.92rem;
+    border: 2px solid transparent;
+}
+
+.nav-item:hover, .nav-item.active {
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.btn-salir {
+    text-decoration: none;
+    background: white;
+    color: #ff4d88 !important;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.92rem;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-left: 8px;
+}
+
+.btn-salir:hover {
+    background: #fff0f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+/* =======================================
+   HERO
+======================================= */
+.hero {
+    background: linear-gradient(135deg, #ff4d88 0%, #c2185b 50%, #880e4f 100%);
+    padding: 50px 30px 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -60px;
+    width: 250px; height: 250px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+}
+
+.hero-content { position: relative; z-index: 1; }
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.hero-sub {
+    color: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hero-bubbles {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.bubble {
+    background: rgba(255,255,255,0.15);
+    width: 58px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+}
+
+/* =======================================
+   CONTENEDOR
+======================================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px 24px 60px;
+    text-align: left;
+}
+
+/* =======================================
+   WELCOME CARD
+======================================= */
+.welcome-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ef);
+    border: 2px solid #ffb3cc;
+    padding: 28px 36px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 20px rgba(255,77,136,0.12);
+}
+
+.avatar-wrapper {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #ff4d88;
+    box-shadow: 0 4px 12px rgba(255,77,136,0.25);
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-fallback {
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.welcome-text h2 {
+    color: #ff4d88;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+    font-family: 'Playfair Display', serif;
+}
+
+.welcome-text p {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.welcome-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wb {
+    background: white;
+    color: #ff4d88;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #ffb3cc;
+}
+
+/* =======================================
+   SECTION TITLE
+======================================= */
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ff4d88;
+    margin: 36px 0 18px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* =======================================
+   PRODUCTS GRID
+======================================= */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    border: 1px solid #ffe0ec;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(255,77,136,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info { padding: 14px 16px 18px; }
+
+.product-info h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.price {
+    color: #ff4d88;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe6ef;
+    color: #ff4d88;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.btn-agregar {
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(90deg, #ff4d88, #ff85a1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-agregar:hover {
+    background: linear-gradient(90deg, #e6005c, #ff4d88);
+    transform: translateY(-1px);
+}
+
+.welcome-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #ff4d88;
+}
+
+.welcome-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mensaje-exito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: opacity 0.5s;
+}
+/* =======================================
+   FOOTER
+======================================= */
+footer {
+    background: linear-gradient(135deg, #c2185b, #ff4d88);
+    color: white;
+    padding: 24px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.92rem;
+    opacity: 0.9;
+    letter-spacing: 0.3px;
+}
+
+/* =======================================
+   BOTÓN CERRAR SESIÓN CENTRADO
+======================================= */
+a.btn-logout {
+    display: block;             
+    width: fit-content;          
+    margin: 30px auto;           
+    padding: 14px 30px;
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 600;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff4d88, #c2185b);
+    box-shadow: 0 6px 18px rgba(255, 77, 136, 0.4);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+/* Hover */
+a.btn-logout:hover {
+    background: linear-gradient(135deg, #e6005c, #ff4d88);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 77, 136, 0.6);
+}
+
+/* Click */
+a.btn-logout:active {
+    transform: scale(0.96);
+}
+/* BOTÓN INFO */
+.btn-info{
+    width:100%;
+    padding:8px;
+    margin-top:6px;
+    border:none;
+    background:#ff4d8d; /* nuevo color */
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.btn-info:hover{
+    background:#e63b7a;
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    width:650px;
+    max-width:90%;
+    border-radius:15px;
+    padding:20px;
+    position:relative;
+    animation:pop 0.25s ease;
+}
+
+@keyframes pop{
+    from{transform:scale(0.7);opacity:0;}
+    to{transform:scale(1);opacity:1;}
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.modal-body{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.modal-img{
+    width:50%;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.modal-text{
+    width:50%;
+}
+
+.modal-desc{
+    font-size:14px;
+    color:#555;
+    margin-bottom:10px;
+}
+
+.modal-details p{
+    font-size:13px;
+    margin:5px 0;
+}
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,213 @@
+/* ==============================
+   RESET
+============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   BODY
+============================== */
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4ec, #fdf1f5);
+}
+
+/* ==============================
+   NAVBAR / HEADER
+============================== */
+header, .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #e75480;
+    padding: 20px 40px;
+}
+
+/* ==============================
+   LOGO (IZQUIERDA)
+============================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto; /* 🔥 clave para empujar menú */
+}
+
+.logo img{
+    height: 40px;
+}
+
+.logo span{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==============================
+   MENÚ (DERECHA 🔥)
+============================== */
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* links */
+.navbar nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.navbar nav a:hover {
+    background: rgba(255,255,255,0.2);
+    color: #ffd1dc;
+}
+
+/* ==============================
+   CONTENEDORES
+============================== */
+.container,
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* ==============================
+   CAJAS (LOGIN + REGISTRO)
+============================== */
+.form-box,
+.login-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    width: 360px;
+    max-width: 90%;
+    box-shadow: 0px 10px 25px rgba(255,182,193,0.25);
+    border: 1px solid #ffe0ea;
+    text-align: center;
+}
+
+/* ==============================
+   TITULOS
+============================== */
+.form-box h2,
+.login-box h2 {
+    color: #d63384;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* SUBTEXTO */
+.form-box p{
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   INPUTS
+============================== */
+.form-box input,
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #f3c6d3;
+    font-size: 14px;
+    background-color: #fff8fb;
+    transition: 0.3s;
+}
+
+.form-box input:focus,
+.login-box input:focus {
+    border-color: #ff85a2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,133,162,0.3);
+}
+
+/* ==============================
+   BOTÓN
+============================== */
+.form-box button,
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff85a2, #ff5c8a);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover,
+.login-box button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #ff5c8a, #ff85a2);
+}
+
+/* ==============================
+   MENSAJES
+============================== */
+.msg,
+.error {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ffe4ec;
+    color: #c2185b;
+}
+
+/* ==============================
+   LINKS
+============================== */
+.extra,
+.registro-link {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.extra a,
+.registro-link a {
+    color: #d63384;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.extra a:hover,
+.registro-link a:hover {
+    color: #ff5c8a;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media(max-width: 480px){
+    .form-box,
+    .login-box{
+        padding: 25px;
+        width: 90%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav{
+        margin-top: 10px;
+        gap: 15px;
+    }
+}
